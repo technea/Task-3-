@@ -1,0 +1,66 @@
+body {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #222;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+/* Audio player full width */
+audio {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 8px;
+}
+
+/* Buttons container */
+.container > div:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Style buttons */
+button {
+  background: #444;
+  border: none;
+  padding: 10px 18px;
+  color: #eee;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #666;
+}
+
+button:active {
+  background: #999;
+}
+
+/* Responsive smaller on mobile */
+@media (max-width: 480px) {
+  .container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
